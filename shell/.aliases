@@ -1,7 +1,8 @@
 # PHP
+alias master="git checkout master && git pull"
 alias phpunit="vendor/bin/phpunit"
 alias phpunitw="phpunit-watcher watch"
-alias a="php artisan"
+alias art="php artisan"
 alias c="composer"
 alias cu="composer update"
 alias cr="composer require"
@@ -19,6 +20,9 @@ alias d="php artisan dusk"
 alias sshconfig="vi ~/.ssh/config"
 alias copykey='command cat ~/.ssh/id_rsa.public | pbcopy'
 alias sail='./vendor/bin/sail'
+alias fix="[ -f vendor/bin/php-cs-fixer ] && vendor/bin/php-cs-fixer fix || php-cs-fixer fix"
+alias analyse="vendor/bin/phpstan analyse"
+aliast pest="vendor/bin/pest"
 
 
 # JavaScript

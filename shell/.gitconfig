@@ -1,0 +1,10 @@
+[user]
+    name = George Boot
+    email = 884482+georgeboot@users.noreply.github.com
+
+[init]
+	defaultBranch = master
+
+[core]
+	excludesfile = ~/.global-gitignore
+	editor = code --wait

@@ -1,0 +1,39 @@
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-fonts"
+tap "homebrew/core"
+tap "homebrew/services"
+# Official Amazon AWS command-line interface
+brew "awscli"
+# Dependency Manager for PHP
+brew "composer"
+# Lightweight DNS forwarder and DHCP server
+brew "dnsmasq", restart_service: true
+# Distributed revision control system
+brew "git"
+# Keep your Mac's application settings in sync
+brew "mackup"
+# Open source relational database management system
+brew "mysql", restart_service: true
+# HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server
+brew "nginx", restart_service: true
+# Platform built on V8 to build network applications
+brew "node"
+# General-purpose scripting language
+brew "php", restart_service: true
+# Persistent key-value database, with built-in net interface
+brew "redis", restart_service: true
+# User interface to the TELNET protocol
+brew "telnet"
+# JavaScript package manager
+brew "yarn"
+# Fish-like fast/unobtrusive autosuggestions for zsh
+brew "zsh-autosuggestions"
+# Tool to flash OS images to SD cards & USB drives
+cask "balenaetcher"
+cask "dynamodb-local"
+# Typeface made for developers
+cask "font-jetbrains-mono"
+cask "font-menlo-for-powerline"
+cask "nosql-workbench-for-amazon-dynamodb"
+cask "7777"

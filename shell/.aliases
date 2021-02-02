@@ -23,6 +23,7 @@ alias sail='./vendor/bin/sail'
 alias fix="[ -f vendor/bin/php-cs-fixer ] && vendor/bin/php-cs-fixer fix || php-cs-fixer fix"
 alias analyse="vendor/bin/phpstan analyse"
 aliast pest="vendor/bin/pest"
+alias ..="cd .."
 
 
 # JavaScript

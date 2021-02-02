@@ -20,25 +20,8 @@ ln -s $HOME/.dotfiles/shell/.zshrc $HOME/.zshrc
 # Symlink the Mackup config
 ln -s $HOME/.dotfiles/macos/.mackup.cfg $HOME/.mackup.cfg
 
-echo 'Configure npm'
-echo '-------------'
-# Create a directory for global packages and tell npm where to store globally installed packages
-mkdir "${HOME}/.npm-packages"
-npm config set prefix "${HOME}/.npm-packages"
-
-echo 'Install homebrew'
-echo '----------------'
-echo install homebrew
-sudo rm -rf /usr/local/Cellar /usr/local/.git && brew cleanup
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-
-# Install our brewfile
+# Install brew dependencies
 brew bundle --file "${HOME}/.dotfiles/macos/Brewfile"
-
-echo 'Install some nice quicklook plugins'
-echo '-----------------------------------'
-brew cask install --force qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzip webp-quicklook suspicious-package
-
 
 echo 'Install imagick'
 echo '---------------'
@@ -56,3 +39,5 @@ echo 'Install laravel valet'
 echo '---------------------'
 composer global require laravel/valet
 valet install
+mkdir -p "${HOME}/Sites"
+valet park "${HOME}/Sites"

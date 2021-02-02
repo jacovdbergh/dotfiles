@@ -35,14 +35,13 @@ cask "dynamodb-local"
 # Typeface made for developers
 cask "font-jetbrains-mono"
 cask "font-menlo-for-powerline"
+
 cask "nosql-workbench-for-amazon-dynamodb"
 cask "7777"
 
-cask "betterzip"
 cask "qlcolorcode"
 cask "qlmarkdown"
 cask "qlprettypatch"
 cask "qlstephen"
 cask "quicklook-csv"
 cask "quicklook-json"
-cask "suspicious-package"

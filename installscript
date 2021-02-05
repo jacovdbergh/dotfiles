@@ -23,6 +23,11 @@ ln -s $HOME/.dotfiles/macos/.mackup.cfg $HOME/.mackup.cfg
 # Install brew dependencies
 brew bundle --file "${HOME}/.dotfiles/macos/Brewfile"
 
+# Enable permissions
+xattr -cr ~/Library/QuickLook/QLStephen.qlgenerator
+qlmanage -r
+qlmanage -r cache
+
 echo 'Install imagick'
 echo '---------------'
 pecl install imagick

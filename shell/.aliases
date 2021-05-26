@@ -25,6 +25,9 @@ alias analyse="vendor/bin/phpstan analyse"
 aliast pest="vendor/bin/pest"
 alias ..="cd .."
 
+# Random
+alias uuid="echo $(uuidgen | tr -d '\n' | tr '[:upper:]' '[:lower:]')"
+
 
 # JavaScript
 alias jest="./node_modules/.bin/jest"

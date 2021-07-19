@@ -20,6 +20,12 @@ ln -s $HOME/.dotfiles/shell/.zshrc $HOME/.zshrc
 # Symlink the Mackup config
 ln -s $HOME/.dotfiles/macos/.mackup.cfg $HOME/.mackup.cfg
 
+echo 'Install homebrew'
+echo '----------------'
+echo install homebrew
+sudo rm -rf /usr/local/Cellar /usr/local/.git && brew cleanup
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+
 # Install brew dependencies
 brew bundle --file "${HOME}/.dotfiles/macos/Brewfile"
 

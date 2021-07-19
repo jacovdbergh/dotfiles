@@ -64,10 +64,10 @@ sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo Hos
 ###############################################################################
 
 # Disable hibernation (speeds up entering sleep mode)
-# sudo pmset -a hibernatemode 0
+sudo pmset -a hibernatemode 0
 
 # Disable the sudden motion sensor as it’s not useful for SSDs
-# sudo pmset -a sms 0
+sudo pmset -a sms 0
 
 ###############################################################################
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
@@ -168,6 +168,19 @@ defaults write com.apple.finder FXInfoPanesExpanded -dict \
 	General -bool true \
 	OpenWith -bool true \
 	Privileges -bool true
+
+###############################################################################
+# Screenshots                                                                 #
+###############################################################################
+
+# Set default screenshot location
+#defaults write com.apple.screencapture "location" -string "~/Documents/Screenshots"
+
+# Exclude date and time in screenshot filenames
+defaults write com.apple.screencapture "include-date" -bool false
+
+# Change the default screenshot file name
+defaults write com.apple.screencapture "name" -string "screenshot"
 
 ###############################################################################
 # Dock, Dashboard, and hot corners                                            #

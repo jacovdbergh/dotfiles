@@ -53,6 +53,10 @@ valet install
 mkdir -p "${HOME}/Sites"
 valet park "${HOME}/Sites"
 
+echo 'Install other php tools'
+echo '---------------------'
+composer global require laravel/installer beyondcode/expose
+
 echo 'Setting macos defaults'
 $HOME/.dotfiles/macos/set-defaults.sh
 

@@ -29,9 +29,6 @@ for file in ~/.dotfiles/shell/.{exports,aliases,functions}; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file"
 done
 
-# Alias hub to git
-eval "$(hub alias -s)"
-
 # Import ssh keys in keychain
 ssh-add -A 2>/dev/null;
 

@@ -3,6 +3,9 @@ tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
 tap "homebrew/services"
+
+brew "pkg-config"
+
 # Official Amazon AWS command-line interface
 brew "awscli"
 # Dependency Manager for PHP

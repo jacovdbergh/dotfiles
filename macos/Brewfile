@@ -38,6 +38,7 @@ cask "dynamodb-local"
 # Typeface made for developers
 cask "font-jetbrains-mono"
 cask "font-menlo-for-powerline"
+cask "jumpcut"
 
 cask "nosql-workbench-for-amazon-dynamodb"
 cask "7777"

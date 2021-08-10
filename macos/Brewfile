@@ -1,5 +1,6 @@
 tap "homebrew/bundle"
 tap "homebrew/cask"
+tap "homebrew/cask-versions"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
 tap "homebrew/services"
@@ -47,6 +48,9 @@ cask "iterm2"
 cask "nosql-workbench"
 cask "7777"
 cask "dynamodb-local"
+cask "visual-studio-code"
+cask "github" # GitHub Desktop
+cask "firefox-developer-edition"
 
 # Amazing Laravel development tools
 cask "tinkerwell"

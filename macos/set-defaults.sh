@@ -182,6 +182,9 @@ defaults write com.apple.screencapture "include-date" -bool false
 # Change the default screenshot file name
 defaults write com.apple.screencapture "name" -string "screenshot"
 
+# Disable screenshot preview
+defaults write com.apple.screencapture "show-thumbnail" -bool false
+
 ###############################################################################
 # Dock, Dashboard, and hot corners                                            #
 ###############################################################################

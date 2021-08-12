@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
 echo 'start osx/set-defaults.sh'
 
+############################################################################
+# Future George: go to https://macos-defaults.com/ for inspiration
+############################################################################
+
 # Ask for the administrator password upfront
 sudo -v
 
@@ -192,8 +196,20 @@ defaults write com.apple.screencapture "show-thumbnail" -bool false
 # Prevent applications from bouncing in Dock
 # defaults write com.apple.dock no-bouncing -bool true
 
-# Set the icon size of Dock items to 72 pixels
-defaults write com.apple.dock tilesize -int 50
+# Set the icon size of Dock items to 50 pixels
+defaults write com.apple.dock "tilesize" -int 50
+
+# Set the dock to the left
+defaults write com.apple.dock "orientation" -string "left"
+
+# Disable dock hide/show animation
+defaults write com.apple.Dock "autohide-delay" -float 0.0001
+
+# Show and hide the dock much quicker
+defaults write com.apple.dock "autohide-time-modifier" -float 0.7
+
+# Remove recents from dock
+defaults write com.apple.dock "show-recents" -bool false
 
 # Hide indicator lights for open applications in the Dock
 # defaults write com.apple.dock show-process-indicators -bool false

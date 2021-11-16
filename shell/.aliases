@@ -26,7 +26,7 @@ alias pest="vendor/bin/pest"
 alias ..="cd .."
 
 # Random
-alias uuid="echo $(uuidgen | tr -d '\n' | tr '[:upper:]' '[:lower:]')"
+alias uuid="uuidgen | tr -d '\n' | tr '[:upper:]' '[:lower:]' | pbcopy && pbpaste && echo"
 
 
 # JavaScript

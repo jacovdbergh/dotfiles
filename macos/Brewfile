@@ -63,3 +63,9 @@ cask "qlcolorcode"
 cask "qlstephen"
 cask "quicklook-csv"
 cask "quicklook-json"
+
+# Python
+cask "miniconda"
+
+# Geo stuff
+brew "gdal"

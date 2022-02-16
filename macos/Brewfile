@@ -36,9 +36,12 @@ brew "zsh-autosuggestions"
 # Tool to flash OS images to SD cards & USB drives
 cask "balenaetcher"
 
+cask "starship"
+
 # Typeface made for developers
 cask "font-jetbrains-mono"
 cask "font-menlo-for-powerline"
+cask "font-jetbrains-mono-nerd-font"
 
 # Clipboard history
 cask "jumpcut"

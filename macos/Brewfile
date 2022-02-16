@@ -36,7 +36,7 @@ brew "zsh-autosuggestions"
 # Tool to flash OS images to SD cards & USB drives
 cask "balenaetcher"
 
-cask "starship"
+brew "starship"
 
 # Typeface made for developers
 cask "font-jetbrains-mono"

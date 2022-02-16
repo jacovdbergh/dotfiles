@@ -46,6 +46,8 @@ cask "font-jetbrains-mono-nerd-font"
 # Clipboard history
 cask "jumpcut"
 
+cask "fig"
+
 # General development tools
 cask "iterm2"
 cask "nosql-workbench"

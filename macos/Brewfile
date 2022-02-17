@@ -43,14 +43,13 @@ cask "font-jetbrains-mono"
 cask "font-menlo-for-powerline"
 cask "font-jetbrains-mono-nerd-font"
 
-# Clipboard history
+# General tools
 cask "jumpcut"
-
 cask "fig"
-
 cask "raycast"
 
 # General development tools
+cask "tableplus"
 cask "iterm2"
 cask "nosql-workbench"
 cask "7777"

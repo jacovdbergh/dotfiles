@@ -48,6 +48,8 @@ cask "jumpcut"
 
 cask "fig"
 
+cask "raycast"
+
 # General development tools
 cask "iterm2"
 cask "nosql-workbench"

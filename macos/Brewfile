@@ -1,77 +1,47 @@
 tap "homebrew/bundle"
 tap "homebrew/cask"
-tap "homebrew/cask-versions"
 tap "homebrew/cask-fonts"
+tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
-
-brew "pkg-config"
-
-# Official Amazon AWS command-line interface
 brew "awscli"
-# Dependency Manager for PHP
-brew "composer"
-# Lightweight DNS forwarder and DHCP server
-brew "dnsmasq", restart_service: true
-# Distributed revision control system
-brew "git"
-# Keep your Mac's application settings in sync
-brew "mackup"
-# Open source relational database management system
-brew "mysql", restart_service: true
-# HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server
-brew "nginx", restart_service: true
-# Platform built on V8 to build network applications
-brew "node"
-# General-purpose scripting language
+brew "pkg-config"
 brew "php", restart_service: true
-# Persistent key-value database, with built-in net interface
+brew "composer"
+brew "dnsmasq", restart_service: true
+brew "gdal"
+brew "git"
+brew "mackup"
+brew "mysql", restart_service: true
+brew "nginx", restart_service: true
+brew "node"
+brew "openjdk"
+brew "openjdk@11"
 brew "redis", restart_service: true
-# User interface to the TELNET protocol
-brew "telnet"
-# JavaScript package manager
-brew "yarn"
-# Fish-like fast/unobtrusive autosuggestions for zsh
-brew "zsh-autosuggestions"
-# Tool to flash OS images to SD cards & USB drives
-cask "balenaetcher"
-
 brew "starship"
-
-# Typeface made for developers
-cask "font-jetbrains-mono"
-cask "font-menlo-for-powerline"
-cask "font-jetbrains-mono-nerd-font"
-
-# General tools
-cask "jumpcut"
-cask "fig"
-cask "raycast"
-
-# General development tools
-cask "tableplus"
-cask "iterm2"
-cask "nosql-workbench"
+brew "telnet"
+brew "yarn"
+brew "zsh-autosuggestions"
 cask "7777"
+cask "balenaetcher"
+cask "devtoys"
 cask "dynamodb-local"
-cask "visual-studio-code"
-cask "github" # GitHub Desktop
-cask "firefox-developer-edition"
-
-# Amazing Laravel development tools
-cask "tinkerwell"
+cask "firefox-developer-edition", args: { language: "nl" }
+cask "font-jetbrains-mono"
+cask "font-jetbrains-mono-nerd-font"
+cask "font-menlo-for-powerline"
 cask "helo"
-cask "ray"
 cask "insomnia"
-
-# Quicklook plugins
+cask "iterm2"
+cask "jumpcut"
+cask "miniconda"
+cask "nosql-workbench"
 cask "qlcolorcode"
 cask "qlstephen"
 cask "quicklook-csv"
 cask "quicklook-json"
-
-# Python
-cask "miniconda"
-
-# Geo stuff
-brew "gdal"
+cask "ray"
+cask "raycast"
+cask "tableplus"
+cask "tinkerwell"
+cask "visual-studio-code"

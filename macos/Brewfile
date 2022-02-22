@@ -9,8 +9,10 @@ brew "pkg-config"
 brew "php", restart_service: true
 brew "composer"
 brew "dnsmasq", restart_service: true
+brew "exif"
 brew "gdal"
 brew "git"
+brew "imagemagick"
 brew "mackup"
 brew "mysql", restart_service: true
 brew "nginx", restart_service: true
